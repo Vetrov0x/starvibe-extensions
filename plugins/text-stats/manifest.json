@@ -1,0 +1,25 @@
+{
+  "format": 1,
+  "id": "starvibe.text-stats",
+  "name": { "ru": "Статистика текста", "en": "Text stats", "fr": "Statistiques du texte" },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "MIT",
+  "icon": "📏",
+  "homepage": "https://github.com/Vetrov0x/starvibe-extensions/tree/main/plugins/text-stats",
+  "description": {
+    "ru": "Сколько слов и знаков на странице и сколько её читать; сегодняшняя дата одной командой.",
+    "en": "Words, characters and reading time of the page; today's date in one command.",
+    "fr": "Mots, caractères et temps de lecture de la page ; la date du jour en une commande."
+  },
+  "permissions": ["page:read"],
+  "contributes": {
+    "slash": [
+      { "id": "stats", "icon": "📏", "name": { "ru": "Статистика страницы", "en": "Page stats", "fr": "Statistiques de la page" },
+        "description": { "ru": "слова, знаки, время чтения", "en": "words, characters, reading time", "fr": "mots, caractères, temps de lecture" },
+        "keys": "stats words count статистика слова знаки чтение mots" },
+      { "id": "today", "icon": "📅", "name": { "ru": "Сегодняшняя дата", "en": "Today's date", "fr": "Date du jour" },
+        "keys": "date today сегодня дата aujourd" }
+    ]
+  }
+}
