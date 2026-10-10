@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://starvibe.app/schema/theme-1.json",
+  "title": "StarVibe theme (format 1)",
+  "description": "Тема StarVibe: только данные — токены и именованные приёмы. Без CSS и без внешних адресов: тему из маркетплейса нельзя превратить в код или канал утечки. Описание формата — THEME-FORMAT.md.",
+  "type": "object",
+  "required": ["format", "id", "name", "version"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "format": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,31}(\\.[a-z0-9][a-z0-9-]{0,31})?$", "description": "автор.тема или встроенное имя" },
+    "name": { "$ref": "#/$defs/text" },
+    "description": { "$ref": "#/$defs/text" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "author": { "type": "string", "maxLength": 60 },
+    "license": { "type": "string", "maxLength": 40 },
+    "extends": { "type": "string", "description": "id темы-основы: всё, чего нет здесь, берётся оттуда" },
+    "sounds": { "enum": ["minimal", "scifi", "rts"], "description": "набор звуков, который тема предлагает поставить" },
+    "form": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "radius": { "type": "number", "minimum": 0, "maximum": 3, "description": "множитель скруглений классики (1 = как в Notion)" },
+        "radiusMax": { "type": "number", "minimum": 0, "maximum": 999, "description": "потолок скругления, px" },
+        "border": { "type": "number", "minimum": 1, "maximum": 4, "description": "толщина рамок коробок, px; разделители всегда 1px" },
+        "corners": { "enum": ["round", "cut", "hud"], "description": "round — скругления; cut — срезанные углы; hud — уголки-скобки" },
+        "cut": { "type": "number", "minimum": 4, "maximum": 24, "description": "размер среза, px (для corners: cut)" },
+        "shadow": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "kind": { "enum": ["soft", "hard", "glow", "line"], "description": "soft — мягкие (Notion); hard — сплошная тень со смещением; glow — свечение; line — только контур" },
+            "offset": { "type": "number", "minimum": 0, "maximum": 12 },
+            "color": { "$ref": "#/$defs/colorRef" }
+          }
+        },
+        "surface": { "enum": ["solid", "glass"], "description": "glass — полупрозрачные панели с размытием поверх градиента; работает с любой палитрой" },
+        "blur": { "type": "number", "minimum": 0, "maximum": 40 },
+        "deco": { "type": "array", "uniqueItems": true, "items": { "enum": ["grid", "scanlines"] } },
+        "select": { "enum": ["fill", "outline", "bar", "invert"], "description": "как отмечен выбранный пункт боковой панели" }
+      }
+    },
+    "type": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "text": { "$ref": "#/$defs/font" },
+        "ui": { "$ref": "#/$defs/font" },
+        "heading": { "$ref": "#/$defs/font" },
+        "headingWeight": { "enum": [400, 500, 600, 700, 800] },
+        "headingCase": { "enum": ["none", "upper"] },
+        "headingTracking": { "type": "number", "minimum": -0.05, "maximum": 0.2, "description": "em" },
+        "headingEffect": { "enum": ["none", "glow", "chroma", "prompt"], "description": "glow — свечение; chroma — цветной сдвиг; prompt — «>» и «#» как в терминале" },
+        "buttonCase": { "enum": ["none", "upper"] },
+        "buttonWeight": { "enum": [400, 500, 600, 700] }
+      }
+    },
+    "motion": {
+      "type": "object", "additionalProperties": false,
+      "properties": { "glitch": { "type": "boolean", "description": "глитч главной кнопки при наведении; выключается при «уменьшить движение»" } }
+    },
+    "colors": {
+      "type": "object", "additionalProperties": false,
+      "description": "родная палитра темы («Цвета стиля»); нет — палитра классики",
+      "properties": { "light": { "$ref": "#/$defs/palette" }, "dark": { "$ref": "#/$defs/palette" } }
+    },
+    "gradient": { "$ref": "#/$defs/gradient" }
+  },
+  "$defs": {
+    "text": {
+      "oneOf": [
+        { "type": "string", "maxLength": 80 },
+        { "type": "object", "additionalProperties": false, "required": ["en"], "properties": { "ru": { "type": "string", "maxLength": 160 }, "en": { "type": "string", "maxLength": 160 }, "fr": { "type": "string", "maxLength": 160 } } }
+      ]
+    },
+    "color": { "type": "string", "pattern": "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$" },
+    "colorRef": { "oneOf": [{ "$ref": "#/$defs/color" }, { "enum": ["text", "border", "accent", "accent2"] }] },
+    "font": { "enum": ["system", "serif", "Inter", "Rubik", "Manrope", "Exo 2", "Play", "JetBrains Mono", "Unbounded", "Tektur"] },
+    "palette": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "bg": { "$ref": "#/$defs/color" }, "bgSidebar": { "$ref": "#/$defs/color" }, "bgElev": { "$ref": "#/$defs/color" }, "bgStrip": { "$ref": "#/$defs/color" },
+        "bgCode": { "$ref": "#/$defs/color" }, "bgCallout": { "$ref": "#/$defs/color" }, "bgHover": { "$ref": "#/$defs/color" }, "bgActive": { "$ref": "#/$defs/color" },
+        "text": { "$ref": "#/$defs/color" }, "text2": { "$ref": "#/$defs/color" }, "text3": { "$ref": "#/$defs/color" }, "textSidebar": { "$ref": "#/$defs/color" },
+        "border": { "$ref": "#/$defs/color" }, "borderStrong": { "$ref": "#/$defs/color" },
+        "accent": { "$ref": "#/$defs/color" }, "accentHover": { "$ref": "#/$defs/color" }, "accentSoft": { "$ref": "#/$defs/color" }, "onAccent": { "$ref": "#/$defs/color" },
+        "accent2": { "$ref": "#/$defs/color" }, "selectBg": { "$ref": "#/$defs/color" }, "selectText": { "$ref": "#/$defs/color" }
+      }
+    },
+    "gradient": {
+      "type": "object", "additionalProperties": false, "required": ["stops"],
+      "properties": {
+        "kind": { "enum": ["linear", "mesh"], "description": "mesh — три мягких пятна, как фон «Стекла»" },
+        "angle": { "type": "number", "minimum": 0, "maximum": 360 },
+        "stops": { "type": "array", "minItems": 2, "maxItems": 4, "items": { "$ref": "#/$defs/color" } }
+      }
+    }
+  }
+}
