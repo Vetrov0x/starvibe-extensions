@@ -1,0 +1,71 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.mono-minimal",
+  "name": {
+    "ru": "Моно-минимал",
+    "en": "Mono minimal",
+    "fr": "Mono minimal"
+  },
+  "description": {
+    "ru": "Чёрно-белое, острые углы, JetBrains Mono.",
+    "en": "Black and white, sharp corners, JetBrains Mono.",
+    "fr": "Noir et blanc, angles vifs, JetBrains Mono."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "classic",
+  "sounds": "minimal",
+  "form": {
+    "radius": 0,
+    "radiusMax": 0
+  },
+  "type": {
+    "text": "JetBrains Mono",
+    "ui": "JetBrains Mono",
+    "heading": "JetBrains Mono"
+  },
+  "colors": {
+    "light": {
+      "bg": "#fafafa",
+      "bgSidebar": "#f0f0f0",
+      "bgElev": "#ffffff",
+      "bgStrip": "#e6e6e6",
+      "bgCode": "#f0f0f0",
+      "bgCallout": "#f0f0f0",
+      "bgHover": "#0a0a0a0f",
+      "bgActive": "#0a0a0a1a",
+      "text": "#0a0a0a",
+      "text2": "#3a3a3a",
+      "text3": "#5e5e5e",
+      "textSidebar": "#141414",
+      "border": "#0a0a0a1f",
+      "borderStrong": "#0a0a0a33",
+      "accent": "#0a0a0a",
+      "accentHover": "#333333",
+      "accentSoft": "#0a0a0a1a",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#0d0d0d",
+      "bgSidebar": "#141414",
+      "bgElev": "#1a1a1a",
+      "bgStrip": "#080808",
+      "bgCode": "#1a1a1a",
+      "bgCallout": "#1a1a1a",
+      "bgHover": "#ffffff0f",
+      "bgActive": "#ffffff1a",
+      "text": "#f2f2f2",
+      "text2": "#bdbdbd",
+      "text3": "#929292",
+      "textSidebar": "#e0e0e0",
+      "border": "#ffffff1f",
+      "borderStrong": "#ffffff33",
+      "accent": "#f2f2f2",
+      "accentHover": "#ffffff",
+      "accentSoft": "#ffffff1f",
+      "onAccent": "#0d0d0d"
+    }
+  }
+}

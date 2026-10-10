@@ -1,0 +1,12 @@
+{
+  "themes": [
+    "themes/amber-terminal.theme.json",
+    "themes/arctic.theme.json",
+    "themes/ink-paper.theme.json",
+    "themes/matrix.theme.json",
+    "themes/mono-minimal.theme.json",
+    "themes/neon-tokyo.theme.json",
+    "themes/pink-brutal.theme.json",
+    "themes/sea-sunset.theme.json"
+  ]
+}

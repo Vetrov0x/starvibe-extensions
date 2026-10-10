@@ -1,0 +1,64 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.amber-terminal",
+  "name": {
+    "ru": "Янтарный терминал",
+    "en": "Amber terminal",
+    "fr": "Terminal ambre"
+  },
+  "description": {
+    "ru": "Янтарь на чёрном, как старый монитор.",
+    "en": "Amber on black, like an old monitor.",
+    "fr": "Ambre sur noir, comme un vieux moniteur."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "cybercore",
+  "sounds": "scifi",
+  "colors": {
+    "light": {
+      "bg": "#fff8e8",
+      "bgSidebar": "#fdeecb",
+      "bgElev": "#fffcf3",
+      "bgStrip": "#f7e4b5",
+      "bgCode": "#fdeecb",
+      "bgCallout": "#fdeecb",
+      "bgHover": "#8a5a0017",
+      "bgActive": "#8a5a0029",
+      "text": "#2a1c00",
+      "text2": "#5a4100",
+      "text3": "#6f5410",
+      "textSidebar": "#3a2700",
+      "border": "#2a1c0033",
+      "borderStrong": "#2a1c0066",
+      "accent": "#8a5a00",
+      "accentHover": "#704900",
+      "accentSoft": "#8a5a0021",
+      "onAccent": "#ffffff",
+      "accent2": "#8a5a00"
+    },
+    "dark": {
+      "bg": "#120c00",
+      "bgSidebar": "#170f00",
+      "bgElev": "#1e1500",
+      "bgStrip": "#0b0700",
+      "bgCode": "#1e1500",
+      "bgCallout": "#1e1500",
+      "bgHover": "#ffb00012",
+      "bgActive": "#ffb00024",
+      "text": "#ffe2a8",
+      "text2": "#e0b765",
+      "text3": "#a88644",
+      "textSidebar": "#ffd88a",
+      "border": "#ffb00033",
+      "borderStrong": "#ffb00077",
+      "accent": "#ffb000",
+      "accentHover": "#ffc640",
+      "accentSoft": "#ffb00026",
+      "onAccent": "#140d00",
+      "accent2": "#ffb000"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.ink-paper",
+  "name": {
+    "ru": "Тушь и бумага",
+    "en": "Ink and paper",
+    "fr": "Encre et papier"
+  },
+  "description": {
+    "ru": "Тёплая бумага, антиква в заголовках.",
+    "en": "Warm paper, serif headings.",
+    "fr": "Papier chaud, titres en romain."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "classic",
+  "type": {
+    "heading": "serif",
+    "headingWeight": 600
+  },
+  "colors": {
+    "light": {
+      "bg": "#f7f3ea",
+      "bgSidebar": "#efe8d8",
+      "bgElev": "#fbf8f1",
+      "bgStrip": "#e8dfcb",
+      "bgCode": "#efe8d8",
+      "bgCallout": "#efe8d8",
+      "bgHover": "#1d1a160f",
+      "bgActive": "#1d1a161a",
+      "text": "#1d1a16",
+      "text2": "#4d463b",
+      "text3": "#6f6656",
+      "textSidebar": "#2b2620",
+      "border": "#1d1a1622",
+      "borderStrong": "#1d1a1640",
+      "accent": "#9b2c1f",
+      "accentHover": "#7f2418",
+      "accentSoft": "#9b2c1f22",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#1b1814",
+      "bgSidebar": "#15130f",
+      "bgElev": "#24201a",
+      "bgStrip": "#100e0b",
+      "bgCode": "#24201a",
+      "bgCallout": "#24201a",
+      "bgHover": "#efe7d612",
+      "bgActive": "#efe7d61f",
+      "text": "#efe7d6",
+      "text2": "#c2b8a3",
+      "text3": "#9a907c",
+      "textSidebar": "#ddd3bf",
+      "border": "#efe7d622",
+      "borderStrong": "#efe7d640",
+      "accent": "#e08a6e",
+      "accentHover": "#e9a18a",
+      "accentSoft": "#e08a6e33",
+      "onAccent": "#1b1814"
+    }
+  }
+}

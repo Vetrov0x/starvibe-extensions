@@ -1,0 +1,63 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.matrix",
+  "name": {
+    "ru": "Матрица",
+    "en": "Matrix",
+    "fr": "Matrice"
+  },
+  "description": {
+    "ru": "Зелёный терминал на чёрном.",
+    "en": "Green terminal on black.",
+    "fr": "Terminal vert sur noir."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "cybercore",
+  "colors": {
+    "light": {
+      "bg": "#effaf2",
+      "bgSidebar": "#e1f3e7",
+      "bgElev": "#f8fdf9",
+      "bgStrip": "#d3ecdc",
+      "bgCode": "#e1f3e7",
+      "bgCallout": "#e1f3e7",
+      "bgHover": "#0a7a3a17",
+      "bgActive": "#0a7a3a29",
+      "text": "#04210f",
+      "text2": "#255a37",
+      "text3": "#3f6d4f",
+      "textSidebar": "#0b2e17",
+      "border": "#04210f33",
+      "borderStrong": "#04210f66",
+      "accent": "#0a7a3a",
+      "accentHover": "#08632f",
+      "accentSoft": "#0a7a3a21",
+      "onAccent": "#ffffff",
+      "accent2": "#0a7a3a"
+    },
+    "dark": {
+      "bg": "#020a04",
+      "bgSidebar": "#03100a",
+      "bgElev": "#06170d",
+      "bgStrip": "#010603",
+      "bgCode": "#06170d",
+      "bgCallout": "#06170d",
+      "bgHover": "#00ff7f12",
+      "bgActive": "#00ff7f24",
+      "text": "#c8ffd9",
+      "text2": "#7fd99c",
+      "text3": "#4f9a69",
+      "textSidebar": "#a4f5bf",
+      "border": "#00ff7f33",
+      "borderStrong": "#00ff7f77",
+      "accent": "#00ff7f",
+      "accentHover": "#66ffb0",
+      "accentSoft": "#00ff7f26",
+      "onAccent": "#00140a",
+      "accent2": "#00ff7f"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.pink-brutal",
+  "name": {
+    "ru": "Розовый брутал",
+    "en": "Pink brutal",
+    "fr": "Brutal rose"
+  },
+  "description": {
+    "ru": "Розовые заливки, чёрные рамки.",
+    "en": "Pink fills, black borders.",
+    "fr": "Aplats roses, bordures noires."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "brutal",
+  "colors": {
+    "light": {
+      "bg": "#ffe8f3",
+      "bgSidebar": "#ffd3ea",
+      "bgElev": "#ffffff",
+      "bgStrip": "#ffc2e1",
+      "bgCode": "#ffd3ea",
+      "bgCallout": "#d6f3ff",
+      "bgHover": "#ffb3d8",
+      "bgActive": "#ff9ccd",
+      "text": "#0a0a0a",
+      "text2": "#2b2b2b",
+      "text3": "#575757",
+      "textSidebar": "#111111",
+      "border": "#0a0a0a",
+      "borderStrong": "#0a0a0a",
+      "accent": "#b3005f",
+      "accentHover": "#8f004c",
+      "accentSoft": "#ff4fa347",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#1a0b13",
+      "bgSidebar": "#230f1a",
+      "bgElev": "#2c1421",
+      "bgStrip": "#12070d",
+      "bgCode": "#230f1a",
+      "bgCallout": "#12283a",
+      "bgHover": "#ff4fa329",
+      "bgActive": "#ff4fa347",
+      "text": "#ffeef7",
+      "text2": "#e2bfd2",
+      "text3": "#b693a6",
+      "textSidebar": "#fbe0ee",
+      "border": "#ffeef7",
+      "borderStrong": "#ffeef7",
+      "accent": "#ff7fbd",
+      "accentHover": "#ff9fcd",
+      "accentSoft": "#ff7fbd38",
+      "onAccent": "#1a0b13",
+      "accent2": "#ff4fa3"
+    }
+  }
+}

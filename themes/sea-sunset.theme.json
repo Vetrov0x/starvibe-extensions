@@ -1,0 +1,69 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.sea-sunset",
+  "name": {
+    "ru": "Закат над морем",
+    "en": "Sea sunset",
+    "fr": "Coucher de soleil"
+  },
+  "description": {
+    "ru": "Стекло на закатном градиенте.",
+    "en": "Glass on a sunset gradient.",
+    "fr": "Verre sur un dégradé de coucher de soleil."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "glass",
+  "colors": {
+    "light": {
+      "bg": "#fff6f2",
+      "bgSidebar": "#fff0ea",
+      "bgElev": "#ffffff",
+      "bgStrip": "#ffe6dc",
+      "bgCode": "#fff0ea",
+      "bgCallout": "#fff0ea",
+      "bgHover": "#2a12180f",
+      "bgActive": "#ffffffbf",
+      "text": "#2a1218",
+      "text2": "#5c3a42",
+      "text3": "#7c5a62",
+      "textSidebar": "#3a1e25",
+      "border": "#2a12181f",
+      "borderStrong": "#2a121833",
+      "accent": "#c22a5e",
+      "accentHover": "#a2224e",
+      "accentSoft": "#c22a5e24",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#1d0f16",
+      "bgSidebar": "#170c12",
+      "bgElev": "#2a1620",
+      "bgStrip": "#12080d",
+      "bgCode": "#26141d",
+      "bgCallout": "#26141d",
+      "bgHover": "#ffffff12",
+      "bgActive": "#ffffff21",
+      "text": "#ffeef2",
+      "text2": "#e3c2cb",
+      "text3": "#b998a2",
+      "textSidebar": "#f3d9e0",
+      "border": "#ffffff1f",
+      "borderStrong": "#ffffff38",
+      "accent": "#ff8fae",
+      "accentHover": "#ffa9c1",
+      "accentSoft": "#ff8fae33",
+      "onAccent": "#1d0f16"
+    }
+  },
+  "gradient": {
+    "kind": "mesh",
+    "stops": [
+      "#ffb199",
+      "#ff6a88",
+      "#ffd36e"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.neon-tokyo",
+  "name": {
+    "ru": "Неон-Токио",
+    "en": "Neon Tokyo",
+    "fr": "Néon Tokyo"
+  },
+  "description": {
+    "ru": "Маджента и циан, срезанные углы.",
+    "en": "Magenta and cyan, cut corners.",
+    "fr": "Magenta et cyan, coins coupés."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "cyberpunk",
+  "colors": {
+    "light": {
+      "bg": "#fff0fb",
+      "bgSidebar": "#ffe2f6",
+      "bgElev": "#ffffff",
+      "bgStrip": "#ffd6f1",
+      "bgCode": "#ffe2f6",
+      "bgCallout": "#ffe2f6",
+      "bgHover": "#1a062014",
+      "bgActive": "#1a062024",
+      "text": "#1a0620",
+      "text2": "#4a2a55",
+      "text3": "#6e4f7a",
+      "textSidebar": "#1a0620",
+      "border": "#1a062055",
+      "borderStrong": "#1a0620",
+      "accent": "#b0008a",
+      "accentHover": "#8e0070",
+      "accentSoft": "#b0008a24",
+      "onAccent": "#ffffff",
+      "accent2": "#b0008a",
+      "selectBg": "#1a0620",
+      "selectText": "#ffd6f1"
+    },
+    "dark": {
+      "bg": "#0a0612",
+      "bgSidebar": "#0f0919",
+      "bgElev": "#170e24",
+      "bgStrip": "#06030c",
+      "bgCode": "#170e24",
+      "bgCallout": "#170e24",
+      "bgHover": "#ff2bd61f",
+      "bgActive": "#00f0ff29",
+      "text": "#f4ecff",
+      "text2": "#c9b8e6",
+      "text3": "#9a86bd",
+      "textSidebar": "#e8dcff",
+      "border": "#ff2bd655",
+      "borderStrong": "#ff2bd6",
+      "accent": "#00f0ff",
+      "accentHover": "#7af7ff",
+      "accentSoft": "#00f0ff29",
+      "onAccent": "#02080b",
+      "accent2": "#ff2bd6",
+      "selectBg": "#00f0ff29",
+      "selectText": "#00f0ff"
+    }
+  },
+  "gradient": {
+    "kind": "linear",
+    "angle": 135,
+    "stops": [
+      "#ff2bd6",
+      "#3a0ca3",
+      "#00f0ff"
+    ]
+  }
+}

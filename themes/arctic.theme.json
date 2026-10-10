@@ -1,0 +1,69 @@
+{
+  "$schema": "https://starvibe.app/schema/theme-1.json",
+  "format": 1,
+  "id": "starvibe.arctic",
+  "name": {
+    "ru": "Арктика",
+    "en": "Arctic",
+    "fr": "Arctique"
+  },
+  "description": {
+    "ru": "Холодное стекло, синие пятна.",
+    "en": "Cold glass, blue blobs.",
+    "fr": "Verre froid, taches bleues."
+  },
+  "version": "1.0.0",
+  "author": "StarVibe",
+  "license": "CC0-1.0",
+  "extends": "glass",
+  "colors": {
+    "light": {
+      "bg": "#f4f8ff",
+      "bgSidebar": "#eef4ff",
+      "bgElev": "#ffffff",
+      "bgStrip": "#e6eefc",
+      "bgCode": "#eef4ff",
+      "bgCallout": "#eef4ff",
+      "bgHover": "#0f1b330f",
+      "bgActive": "#ffffffbf",
+      "text": "#0f1b33",
+      "text2": "#3a4a6a",
+      "text3": "#5d6c8a",
+      "textSidebar": "#1b2a47",
+      "border": "#0f1b331f",
+      "borderStrong": "#0f1b3333",
+      "accent": "#2563eb",
+      "accentHover": "#1d4fd0",
+      "accentSoft": "#2563eb24",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#0b1222",
+      "bgSidebar": "#0a101e",
+      "bgElev": "#16203a",
+      "bgStrip": "#070c18",
+      "bgCode": "#131c33",
+      "bgCallout": "#131c33",
+      "bgHover": "#ffffff12",
+      "bgActive": "#ffffff21",
+      "text": "#e8f0ff",
+      "text2": "#b4c3e0",
+      "text3": "#8b9bbd",
+      "textSidebar": "#d3def5",
+      "border": "#ffffff1f",
+      "borderStrong": "#ffffff38",
+      "accent": "#7aa7ff",
+      "accentHover": "#99bcff",
+      "accentSoft": "#7aa7ff33",
+      "onAccent": "#0b1222"
+    }
+  },
+  "gradient": {
+    "kind": "mesh",
+    "stops": [
+      "#9ec5ff",
+      "#c7f0ff",
+      "#b8b5ff"
+    ]
+  }
+}
