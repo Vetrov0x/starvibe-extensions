@@ -51,6 +51,17 @@ starvibe.slash('stats', async () => { const p = await starvibe.page.read(); retu
 
 Or install without GitHub: **Install from file…** takes a `{ "manifest": {…}, "main": "…" }` JSON file.
 
+## Icon packs
+
+| Pack | What it is |
+|---|---|
+| [Bold](icons/bold.iconpack.json) · Жирные | The built-in StarVibe icons with a heavier 2.4 stroke |
+
+An icon pack is data only, like a theme: `"kind": "icons"`, and for each slot (`rail.files`, `rail.chat`, `rail.goals`,
+`rail.sections`, `settings.<section>`) up to 8 SVG path strings. No markup, styles or URLs — HQ checks every path before
+using it; missing slots fall back to the built-in icons. Publish your own pack in a repo with the `starvibe-icons` topic
+and an `iconpack.json` at its root (or `starvibe-icons.json` listing several), id starting with your GitHub name.
+
 ## Licence
 
-Themes: CC0-1.0 (public domain, `LICENSE`). Plugins: MIT (`plugins/LICENSE`).
+Themes and icon packs: CC0-1.0 (public domain, `LICENSE`). Plugins: MIT (`plugins/LICENSE`).
